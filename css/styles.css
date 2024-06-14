@@ -19,6 +19,8 @@ p {
 }
 
 .text {
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -217,10 +219,6 @@ input {
   background-color: #404bbf;
 }
 
-.section-adventages {
-  padding: 120px 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -234,20 +232,29 @@ input {
   overflow: hidden;
 }
 
+.section-adventages {
+  /* padding: 120px 0; */
+  padding: 96px 0;
+}
+
 .adventages-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  /* gap: 24px; */
+  gap: 72px;
 }
+
 .item-box {
-  width: 264px;
-  height: 112px;
+  /* width: 264px;
+  height: 112px; */
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background: #f4f4fd;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
+  display: none;
 }
 
 .item-box svg {
@@ -261,10 +268,22 @@ input {
   justify-content: flex-start;
   flex-direction: column;
   gap: 8px;
-  width: calc((100% - 3 * 24px) / 4);
+  /* width: calc((100% - 3 * 24px) / 4); */
 }
 .avantage-title {
-  margin-bottom: 8px;
+  /* padding-bottom: 8px; */
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.avantage-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .section-team {
@@ -829,6 +848,16 @@ input {
     line-height: 1.07;
     font-size: 56px;
   }
+  /* section-2 */
+
+  .adventages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .adventages-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -854,5 +883,33 @@ input {
   }
   .solution-title {
     max-width: 496px;
+  }
+  /* section-2 */
+  .section-adventages {
+    padding: 120px 0;
+  }
+  .adventages-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .adventages-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .item-box {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 8px; */
+  }
+  .avantage-title {
+    padding-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .avantage-text {
+    font-weight: 400;
   }
 }
