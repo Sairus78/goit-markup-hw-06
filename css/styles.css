@@ -221,6 +221,7 @@ input {
 .mob-adress {
   position: absolute;
   bottom: 128px;
+  font-style: normal;
 }
 
 .mob-adress-list {
@@ -261,10 +262,23 @@ input {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/mob-dark-bg-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (-vebkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .section-solution {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mob-dark-bg-2x.jpg);
+  }
 }
 
 .container-solution {
@@ -969,9 +983,32 @@ input {
     padding: 25.5px 0;
   }
   /* section-1 */
+
+  .section-solution {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/dark-bgtab-dark-1x.jpg);
+  }
+  @media screen and (-vebkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .section-solution {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/dark-bgtab-dark\ -2x.jpg);
+    }
+  }
+
   .container-solution {
     padding: 112px 136px;
   }
+
   .solution-title {
     line-height: 1.07;
     font-size: 56px;
@@ -1058,6 +1095,26 @@ input {
     line-height: 1.5;
   }
   /* section-1 */
+  .section-solution {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+  @media screen and (-vebkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .section-solution {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
+  }
   .container-solution {
     padding: 188px 0;
     gap: 48px;
