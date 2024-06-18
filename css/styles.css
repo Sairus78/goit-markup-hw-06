@@ -1018,10 +1018,14 @@ input {
   .adventages-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 8px;
+    column-gap: 24px;
+    row-gap: 72px;
   }
   .adventages-item {
     width: calc((100% - 24px) / 2);
+  }
+  .avantage-title {
+    margin: 0;
   }
   /* section-3 */
   .team-list {
